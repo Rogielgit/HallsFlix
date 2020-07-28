@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import LogoHalls from '../src/components/LogoHalls/index'
+import HeaderHalls from '../src/components/HeaderHalls/index'
+import ButtonHalls from './components/ButtomHalls';
+import FooterHalls from './components/FooterHalls';
+import HighlighHalls from './components/HighlightHalls';
+import LinkHalls from './components/LinkHalls';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+  return (    
+    <>
+    <HeaderHalls>
+      <LogoHalls></LogoHalls>
+      <ButtonHalls>Novo video</ButtonHalls>     
+      </HeaderHalls>   
+      <FooterHalls>
+        <LogoHalls>
+        </LogoHalls>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Site feito na <HighlighHalls>#ImersãoReact</HighlighHalls> da {' '}
+          <LinkHalls href="https://alura.com.br">Alura</LinkHalls>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      </FooterHalls> 
+      </>
   );
 }
 
