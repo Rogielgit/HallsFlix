@@ -3,3 +3,9 @@
    --color-primary-medium: #2A7AE4;
    --color-grey-ligth: #F5F5F5;    
 }
+
+#root {
+   min-width: calc(100vh - var(--bodyPaddingTop));;
+   display: flex;
+   flex-direction: column;
+}
