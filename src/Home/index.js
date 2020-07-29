@@ -6,7 +6,6 @@ import dadosIniciais from '../data/dados_iniciais.json';
 import HeaderHalls from '../components/HeaderHalls/index';
 
 
-
 function Home() {
   return (
     <>

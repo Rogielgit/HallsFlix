@@ -17,13 +17,13 @@ padding-top: 50px;
 `;
 
 
-function DefaultPage({body}){
+function DefaultPage({children}){
 
 return (
     <>
   <HeaderHalls></HeaderHalls>
   <Main>
-    {body}
+    {children}
     </Main>
   <FooterHalls></FooterHalls>
   </>
